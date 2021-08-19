@@ -359,11 +359,10 @@ a:link, i {
     flex-wrap: wrap;
     margin-left: 8em;
     cursor: pointer;
-    transition: all .2s ease-in-out;
 }
 
 .tech__content:hover {
-    transform: scale(1.1);
+    border: 2px solid black;
     mix-blend-mode: multiply;
 }
 
@@ -422,15 +421,15 @@ a:link, i {
 
 .backEnd {
     mix-blend-mode: multiply;
-    width: 250px;
+    width: 500px;
     height: 200px;
 }
 
 .mvcIcon {
     mix-blend-mode: multiply;
-    width: 150px;
-    height: auto;
-    margin-left: -15px;
+    width: 200px;
+    height: 200px;
+    margin-left: -10px;
 }
 
 /* Resume Section Styling */
