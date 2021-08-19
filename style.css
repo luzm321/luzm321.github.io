@@ -1,0 +1,780 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Kaushan Script', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(7, 20, 19);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    padding-right: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    opacity: 1;
+    bottom: 30px;
+    pointer-events: auto;
+}
+
+/* Navbar Styling */
+
+.navbar {
+    /* background: rgb(55, 145, 137); */
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    /* position: sticky;  */
+    /* top: 0; */
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.navbar.sticky {
+    padding: 30px 0;
+    background:rgb(18, 131, 121);
+}
+
+.nav__div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    padding: 10px 80px;
+    margin: auto;
+}
+
+.nav__divPort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    padding: 10px 80px;
+    margin-left: 35px;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.logo a span {
+    color: rgb(19, 121, 112);
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: #fff;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+}
+
+.menu li:hover {
+    transform: scale(1.27);
+}
+
+.menu li:after {
+content: '';
+width: 0%;
+height: 2px;
+background: rgb(192, 241, 241);
+display: block;
+margin: auto;
+transition: 0.5s;
+transform:skew(12deg, -7deg) scaleY(.80);
+}
+
+.menu li:hover::after {
+    width: 80%;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: rgb(79, 224, 212);
+}
+
+/* Home Section Styling */
+
+.home {
+    display: flex;
+    /* background: url("images/bookAtBeach.jpg") no-repeat center; */
+    /* background: url("https://wallpaperaccess.com/full/1556357.jpg") no-repeat center; */
+    background: url("https://images.unsplash.com/photo-1440778303588-435521a205bc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2glMjByZWFkaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+    height: 100vh;
+    color: #fff;
+}
+
+.home .nav__div {
+    margin: 17em 0 auto 40px;
+}
+
+.text-1 {
+    font-size: 30px;
+    margin-left: -65px;
+}
+
+.text-2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: -75px;
+}
+
+.text-3 {
+    font-size: 35px;
+    margin: 5px 0 5px -75px;
+}
+
+.text-3 span {
+    color: rgb(18, 131, 121);
+    font-weight: 600;
+}
+
+.home__content a {
+    display: inline-block;
+    background: rgb(19, 121, 112);
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 12px 25px;
+    margin-top: 20px;
+    margin-left: -71px;
+    border-radius: 50px;
+    border: 2px solid rgb(19, 121, 112);
+    transition: all .2s ease-in-out;
+}
+
+.home__content a:hover {
+    color: rgb(19, 121, 112);
+    background: none;
+    transform: scale(1.1);
+}
+
+/* All Similar Content Styling Code */
+
+section {
+    padding: 100px 0;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+    margin-top: 1em;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    width: 165px;
+    height: 3px;
+    bottom: 0px;
+    left: 50%;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    font-size: 20px;
+    color:rgb(19, 121, 112);
+    bottom: -16px;
+    left: 50%;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* About Section Styling */
+
+.about .title::after {
+    content: "Who I Am";
+}
+
+.left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.left img:hover {
+    transform: scale(1.1);
+    border: 2px solid rgb(19, 121, 112);
+}
+
+.about__content, .resume__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about__content .left {
+    width: 45%;
+
+}
+
+.about__content .right {
+    width: 55%;
+    
+}
+
+.about__content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about__content .right .text span {
+    color:rgb(19, 121, 112);
+}
+
+.intro {
+    text-align: justify;
+    font-size: 19px;
+    margin-top: 35px;
+}
+
+/* Resume Section Styling */
+
+.resume {
+    display: inline-block;
+    background: rgb(19, 121, 112);
+    color: whitesmoke;
+    font-size: 22px;
+    padding: 8px 25px;
+    margin-top: 20px;
+    margin-left: 0;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 2px solid rgb(19, 121, 112);
+    transition: all .2s ease-in-out;
+}
+
+.resume:hover {
+    color: rgb(19, 121, 112);
+    background: none;
+    transform: scale(1.1);
+}
+
+.icons {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+    cursor: pointer;
+    margin-left: 8.7em;
+}
+
+.col:hover .icons {
+    max-height: 100px;
+}
+
+.icons .link {
+    font-size: 20px;
+    padding: 10px 8px;
+    cursor: pointer;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.fa-linkedin {
+    color: #7298e4;
+    transition: all .2s ease-in-out;
+}
+
+.fa-linkedin:hover {
+    transform: scale(1.6);
+}
+
+.fa-github {
+    transition: all .2s ease-in-out;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.fa-github:hover {
+    transform: scale(1.6);
+    text-decoration: underline;
+}
+
+.fa-id-card {
+    color: rgb(90, 161, 121);
+    transition: all .2s ease-in-out;
+}
+
+.fa-id-card:hover {
+    transform: scale(1.6);
+}
+
+a:link, i {
+    color: black;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+/* Tech Section Styling */
+
+.tech {
+    background: rgb(218, 229, 240);
+}
+
+.tech__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8em;
+    cursor: pointer;
+}
+
+.title__tech {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+    margin-top: 1em;
+}
+
+.title__tech::before {
+    content: "";
+    position: absolute;
+    width: 165px;
+    height: 3px;
+    bottom: 0px;
+    left: 50%;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.title__tech::after {
+    content: "Tech Stack";
+    position: absolute;
+    font-size: 20px;
+    color:rgb(19, 121, 112);
+    bottom: -16px;
+    left: 50%;
+    padding: 5px;
+    background: rgb(218, 229, 240);
+    transform: translateX(-50%);
+    margin-top: 2em;
+}
+
+.slack {
+    width: 100px;
+    height: auto;
+    mix-blend-mode: multiply;
+    border-radius: 40px;
+}
+
+.json {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 15px;
+    mix-blend-mode: multiply;
+}
+
+.techStack {
+    mix-blend-mode: multiply;
+}
+
+/* Resume Section Styling */
+
+.resumeDiv .title::after {
+    content: "Experience";
+}
+
+
+.title__resume {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+    margin-top: 1em;
+}
+
+.title__resume::before {
+    content: "";
+    position: absolute;
+    width: 165px;
+    height: 3px;
+    bottom: 0px;
+    left: 50%;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.title__resume::after {
+    content: "Experience";
+    position: absolute;
+    font-size: 20px;
+    color:rgb(19, 121, 112);
+    bottom: -16px;
+    left: 50%;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+    margin-top: 2em;
+}
+
+.card {
+    width: calc(33% -20px);
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px 25px;
+    cursor: pointer;
+    background: rgb(218, 229, 240);
+    margin-bottom: 6em;
+    transition: all .2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    border: 2px solid black;
+}
+
+.textResume {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px 0 25px 0;
+}
+
+.fas {
+    font-size: 30px;
+    margin-left: 10px;
+    color:rgb(19, 121, 112);
+}
+
+.resumePg {
+    font-size: 20px;
+    text-align: left;
+}
+
+.desc {
+    text-align: center;
+    font-size: 21px;
+}
+
+/* Portfolio Section Styling */
+
+.portfolio {
+    background: rgb(218, 229, 240);
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+
+.title__portfolio {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+    margin-top: 1em;
+}
+
+.title__portfolio::before {
+    content: "";
+    position: absolute;
+    width: 165px;
+    height: 3px;
+    bottom: 0px;
+    left: 50%;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.title__portfolio::after {
+    content: "Projects";
+    position: absolute;
+    font-size: 20px;
+    color:rgb(19, 121, 112);
+    bottom: -16px;
+    left: 50%;
+    padding: 5px;
+    background: rgb(218, 229, 240);
+    transform: translateX(-50%);
+    margin-top: 2em;
+}
+
+.portfolioText {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px 0 25px 0;
+}
+
+.gh {
+    margin-left: 10px;
+}
+
+.gh::before {
+    margin-right: 5px;
+}
+
+.ghDiv {
+    margin-top: 1.5em;
+    font-size: 26px;
+}
+
+.links {
+    margin-right: 10px;
+}
+
+.portText {
+    font-size: 19px;
+}
+
+.photo {
+    width: 200px;
+    height: auto;
+    mix-blend-mode: multiply;
+    border-radius: 20px;
+    margin-bottom: 1em;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 15em;
+    height: 20em;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+}
+  
+div.gallery:hover {
+border: 1px solid rgb(19, 121, 112);
+transform: scale(1.1);
+}
+
+.gallery2 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 15em;
+    height: 20em;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+}
+
+.gallery2:hover {
+    border: 1px solid rgb(19, 121, 112);
+    transform: scale(1.2);
+}
+
+.gallery3 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 15em;
+    height: 20em;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+}
+
+.gallery3:hover {
+    border: 1px solid rgb(19, 121, 112);
+    transform: scale(1.2);
+}
+  
+  
+div.description {
+padding: 15px;
+text-align: center;
+}
+
+.pandaDiv {
+    display: flex;
+    margin: 3em 0 1em 0;
+}
+
+.pandaDiv2 {
+    display: flex;
+    margin: 3em 0 1em 23em;
+}
+
+.pandaDiv3 {
+    display: flex;
+    margin: 3em 0 1em 7.5em;
+}
+
+.cardDeck {
+    height: 80%;
+    width: 110%;
+}
+
+.msg {
+    height: 80%;
+    width: 110%;
+}
+
+.imageThing {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imageThing2 {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cardFront {
+    width: 100%;
+    height: 80%;
+}
+
+.cardBack {
+    width: 100%;
+    height: 80%;
+}
+
+.cardModalView {
+    width: 100%;
+    height: 80%;
+}
+
+.cardScoreHistory {
+    width: 100%;
+    height: 80%;
+}
+
+/* Contact Section Styling */
+
+.title__contact {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+    margin-top: 1em;
+}
+
+.title__contact::before {
+    content: "";
+    position: absolute;
+    width: 165px;
+    height: 3px;
+    bottom: 0px;
+    left: 50%;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.title__contact::after {
+    content: "Information";
+    position: absolute;
+    font-size: 20px;
+    color:rgb(19, 121, 112);
+    bottom: -16px;
+    left: 50%;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+    margin-top: 2em;
+}
+
+.link_a {
+    color: black;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.link_a:hover {
+    text-decoration: underline;
+}
+
+.contact__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 15em;
+}
+
+.contact__content .column {
+    width: calc(50%-30px);
+}
+
+.contact__content .text {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 1em;
+    margin-left: 6px;
+}
+
+.contact__content .left p {
+    text-align: justify;
+}
+
+.contact__content .left .icons_div {
+    margin: 10px 0;
+}
+
+.contact__content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.contact__content .row .info {
+    margin-left: 30px;
+}
+
+.subTitle::before {
+    margin-left: 9px;
+    font-size: 35px;
+    color:rgb(19, 121, 112);
+}
+
+.head {
+    font-weight: 500;
+}
+
+.sub-title {
+    color: #333;
+    transition: all .2s ease-in-out;
+}
+
+.sub-title:hover {
+    transform: scale(1.1);
+}
