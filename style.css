@@ -361,11 +361,6 @@ a:link, i {
     cursor: pointer;
 }
 
-.tech__content:hover {
-    border: 2px solid black;
-    mix-blend-mode: multiply;
-}
-
 .title__tech {
     position: relative;
     text-align: center;
@@ -421,14 +416,14 @@ a:link, i {
 
 .backEnd {
     mix-blend-mode: multiply;
-    width: 500px;
+    width: 450px;
     height: 200px;
 }
 
 .mvcIcon {
     mix-blend-mode: multiply;
     width: 200px;
-    height: 200px;
+    height: 180px;
     margin-left: -10px;
 }
 
