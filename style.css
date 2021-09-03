@@ -73,6 +73,7 @@ html {
   max-width: 1300px;
   padding: 10px 80px;
   margin-left: 35px;
+  cursor: pointer;
 }
 
 .logo a {
@@ -645,7 +646,7 @@ div.description {
 
 .pandaDiv2 {
   display: flex;
-  margin: 3em 0 1em 14em;
+  margin: 3em 0 1em 13em;
 }
 
 .pandaDiv3 {
