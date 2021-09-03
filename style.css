@@ -646,7 +646,7 @@ div.description {
 
 .pandaDiv2 {
   display: flex;
-  margin: 3em 0 1em 13em;
+  margin: 3em 0 1em 12em;
 }
 
 .pandaDiv3 {
@@ -797,4 +797,8 @@ div.description {
 
 .sub-title:hover {
   transform: scale(1.1);
+}
+
+.video {
+  margin-top: 2em;
 }
