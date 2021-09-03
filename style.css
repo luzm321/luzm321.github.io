@@ -646,7 +646,7 @@ div.description {
 
 .pandaDiv2 {
   display: flex;
-  margin: 3em 0 1em 12em;
+  margin: 3em 0 1em 13em;
 }
 
 .pandaDiv3 {
@@ -800,5 +800,5 @@ div.description {
 }
 
 .video {
-  margin-top: 2em;
+  margin-top: 4em;
 }
