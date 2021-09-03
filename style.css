@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Kaushan Script", cursive;
+  cursor: pointer;
 }
 
 html {
@@ -47,6 +48,7 @@ html {
   /* top: 0; */
   transition: all 0.3s ease;
   z-index: 999;
+  cursor: pointer;
 }
 
 .navbar.sticky {
@@ -61,6 +63,7 @@ html {
   max-width: 1300px;
   padding: 10px 80px;
   margin: auto;
+  cursor: pointer;
 }
 
 .nav__divPort {
@@ -255,6 +258,7 @@ section .title::after {
 
 .about__content .right {
   width: 55%;
+  cursor: pointer;
 }
 
 .about__content .right .text {
@@ -336,6 +340,7 @@ section .title::after {
 .fa-id-card {
   color: rgb(90, 161, 121);
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .fa-id-card:hover {
@@ -481,6 +486,7 @@ i {
 .card:hover {
   transform: scale(1.1);
   border: 2px solid black;
+  cursor: pointer;
 }
 
 .textResume {
@@ -639,7 +645,7 @@ div.description {
 
 .pandaDiv2 {
   display: flex;
-  margin: 3em 0 1em 16em;
+  margin: 3em 0 1em 14em;
 }
 
 .pandaDiv3 {
@@ -738,10 +744,12 @@ div.description {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-left: 15em;
+  cursor: pointer;
 }
 
 .contact__content .column {
   width: calc(50%-30px);
+  cursor: pointer;
 }
 
 .contact__content .text {
