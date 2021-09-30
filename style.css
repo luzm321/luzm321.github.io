@@ -176,6 +176,7 @@ html {
   padding: 12px 25px;
   margin-top: 20px;
   margin-left: -71px;
+  margin-bottom: 20px;
   border-radius: 50px;
   border: 2px solid rgb(19, 121, 112);
   transition: all 0.2s ease-in-out;
@@ -864,19 +865,19 @@ div.description {
   /* background: rgb(68, 153, 146); */
 }
 
-/* @keyframes typing {
+@keyframes typing {
   100% {
     left: 100%;
     margin: 0 -35px 0 35px;
   }
-} */
+}
 
-@keyframes typing {
+/* @keyframes typing {
   40%,
   60% {
-    left: calc(100% + 50px);
+    left: calc(100% + 30px);
   }
   100% {
     left: 0;
   }
-}
+} */
