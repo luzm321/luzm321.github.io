@@ -817,24 +817,24 @@ div.description {
 }
 
 .wrapper .static-txt {
-  font-size: 30px;
+  font-size: 60px;
   font-weight: 400;
   color: #fff;
 }
 
 .wrapper .dynamic-txts {
   margin-left: 15px;
-  line-height: 50px;
-  height: 50px;
+  line-height: 90px;
+  height: 90px;
   overflow: hidden;
 }
 
 .dynamic-txts li {
   list-style: none;
-  font-size: 30px;
+  font-size: 60px;
   font-weight: 500;
   color: rgb(19, 121, 112);
-  animation: slide 12s steps(5) infinite;
+  animation: slide 12s steps(4) infinite;
   position: relative;
   top: 0;
 }
@@ -847,6 +847,8 @@ div.description {
 
 .dynamic-txts li span {
   position: relative;
+  margin: 5px 0;
+  line-height: 90px;
 }
 
 .dynamic-txts li span::after {
@@ -856,7 +858,7 @@ div.description {
   height: 100%;
   width: 100%;
   border-left: 2px solid rgb(19, 121, 112);
-  animation: typing 3s steps(33) infinite;
+  animation: typing 3s steps(11) infinite;
   /* background: rgb(68, 153, 146); */
 }
 
