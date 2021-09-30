@@ -814,6 +814,7 @@ div.description {
 
 .wrapper {
   display: inline-flex;
+  margin: 2em 0em 2em -2em;
 }
 
 .wrapper .static-txt {
