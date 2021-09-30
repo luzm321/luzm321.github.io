@@ -802,3 +802,67 @@ div.description {
 .video {
   margin-top: 4em;
 }
+
+/* CSS for Typing Animation: */
+
+.containerBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: inline-flex;
+}
+
+.wrapper .static-txt {
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  line-height: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.dynamic-txts li {
+  list-style: none;
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(19, 121, 112);
+  animation: slide 6s steps(5) infinite;
+  position: relative;
+  top: 0;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+.dynamic-txts li span {
+  position: relative;
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid rgb(19, 121, 112);
+  animation: typing 1.5s steps(33) infinite;
+  background: rgb(68, 153, 146);
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
