@@ -810,30 +810,30 @@ div.description {
   align-items: center;
   justify-content: center;
   min-height: 100vh; */
-  margin-left: -2em;
+  margin-left: -4em;
 }
 
 .wrapper {
   display: inline-flex;
-  margin: 2em 0em 2em -2em;
+  margin: 1em 0em 1em -2em;
 }
 
 .wrapper .static-txt {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 400;
   color: #fff;
 }
 
 .wrapper .dynamic-txts {
   margin-left: 15px;
-  line-height: 80px;
-  height: 80px;
+  line-height: 90px;
+  height: 90px;
   overflow: hidden;
 }
 
 .dynamic-txts li {
   list-style: none;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 500;
   color: rgb(19, 121, 112);
   animation: slide 12s steps(4) infinite;
@@ -850,7 +850,7 @@ div.description {
 .dynamic-txts li span {
   position: relative;
   margin: 5px 0;
-  line-height: 80px;
+  line-height: 90px;
 }
 
 .dynamic-txts li span::after {
@@ -874,7 +874,7 @@ div.description {
 @keyframes typing {
   40%,
   60% {
-    left: calc(100% + 30px);
+    left: calc(100% + 50px);
   }
   100% {
     left: 0;
