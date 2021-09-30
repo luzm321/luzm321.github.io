@@ -174,7 +174,7 @@ html {
   color: whitesmoke;
   font-size: 25px;
   padding: 12px 25px;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: -71px;
   margin-bottom: 20px;
   border-radius: 50px;
@@ -816,7 +816,7 @@ div.description {
 
 .wrapper {
   display: inline-flex;
-  margin: 1em 0em 1em -2em;
+  margin: 0.5em 0em 0.5em -1em;
 }
 
 .wrapper .static-txt {
@@ -837,7 +837,7 @@ div.description {
   font-size: 60px;
   font-weight: 500;
   color: rgb(19, 121, 112);
-  animation: slide 12s steps(4) infinite;
+  animation: slide 20s steps(4) infinite;
   position: relative;
   top: 0;
 }
@@ -861,16 +861,16 @@ div.description {
   height: 100%;
   width: 100%;
   border-left: 2px solid rgb(19, 121, 112);
-  animation: typing 3s steps(11) infinite;
+  /* animation: typing 3s steps(11) infinite; */
   /* background: rgb(68, 153, 146); */
 }
 
-@keyframes typing {
+/* @keyframes typing {
   100% {
     left: 100%;
     margin: 0 -35px 0 35px;
   }
-}
+} */
 
 /* @keyframes typing {
   40%,
