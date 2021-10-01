@@ -836,7 +836,7 @@ div.description {
   font-size: 60px;
   font-weight: 500;
   color: rgb(19, 121, 112);
-  animation: slide 12s steps(5) infinite;
+  animation: slide 12s steps(4) infinite;
   position: relative;
   top: 0;
 }
