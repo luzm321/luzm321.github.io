@@ -4,7 +4,6 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Kaushan Script", cursive;
-  cursor: pointer;
 }
 
 html {
@@ -148,7 +147,7 @@ html {
 }
 
 .text-1 {
-  font-size: 30px;
+  font-size: 35px;
   margin-left: -65px;
 }
 
@@ -351,7 +350,7 @@ section .title::after {
 
 a:link,
 i {
-  color: black;
+  color: whitesmoke;
   font-family: "Kaushan Script", cursive;
 }
 
@@ -826,7 +825,7 @@ div.description {
 }
 
 .wrapper .dynamic-txts {
-  margin-left: 15px;
+  margin-left: 12px;
   line-height: 90px;
   height: 90px;
   overflow: hidden;
@@ -837,7 +836,7 @@ div.description {
   font-size: 60px;
   font-weight: 500;
   color: rgb(19, 121, 112);
-  animation: slide 20s steps(4) infinite;
+  animation: slide 12s steps(4) infinite;
   position: relative;
   top: 0;
 }
@@ -860,7 +859,7 @@ div.description {
   left: 0;
   height: 100%;
   width: 100%;
-  border-left: 2px solid rgb(19, 121, 112);
+  /* border-left: 2px solid rgb(19, 121, 112); */
   /* animation: typing 3s steps(11) infinite; */
   /* background: rgb(68, 153, 146); */
 }
